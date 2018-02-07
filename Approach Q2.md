@@ -32,6 +32,6 @@ Query 2 (with plans ending or starting in 2016:
 php	398.0000
 dotnet	119.0000
 
-PHP was utilized by 2 account ids: 683694 and 966979. DOTNET was utilized by 1 accountL 1160071.
+PHP was utilized by 2 account ids: 683694 and 966979. DOTNET was utilized by 1 account: 1160071.
 
 
