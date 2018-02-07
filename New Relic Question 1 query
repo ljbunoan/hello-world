@@ -19,7 +19,7 @@ FROM customer_history
  WHERE accounts.application_type LIKE ('%ruby%')
 AND  customer_history.plan_end not like('1900%') 
  AND customer_history.plan_start not like ('1900%')
- AND (TIMESTAMPDIFF (MONTH, customer_history.plan_start, '2017-06-01') * (customer_history.total_mrr)) >0
+ AND (TIMESTAMPDIFF (MONTH, customer_history.plan_start, customer_history.plan_end) * (customer_history.total_mrr)) >0
  GROUP BY customer_history.account_id
 
  
