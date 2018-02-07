@@ -25,12 +25,12 @@ TOTAL:
 - Java: 0. 
 
 Query 1 (active through 2016 results):
-php	3582.0000
-php	1791.0000
+php	$3,582
+php	$1,791
 
 Query 2 (with plans ending or starting in 2016:
-php	398.0000
-dotnet	119.0000
+php	$398
+dotnet	$119
 
 PHP was utilized by 2 account ids: 683694 and 966979. DOTNET was utilized by 1 account: 1160071.
 
