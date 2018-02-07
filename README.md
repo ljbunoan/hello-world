@@ -1,6 +1,6 @@
 # Question 4: Take a look at the trends in number of clicks per product over time. Describe anypatterns that you notice. This data can be found in the tracks dataset.
 
-# Approach part 1: SQL querying
+# Approach part 1: SQL querying (New Relic Exercise LJB Q4 MYSQL)
 
 Since the data is contained in the Tracks table, I worked under the assumption that the abbrevations (first few characters) in the event column helped highlight the different products (syn, ins, alrt, mtbls, and bynd). 
 
