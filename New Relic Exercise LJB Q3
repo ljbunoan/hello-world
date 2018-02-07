@@ -1,0 +1,9 @@
+SELECT
+  DISTINCT SUBSTRING(event, 1, locate('_',event)) as 'EVENT NAME', -- Assuming name of product is based on abbreviation before first underscore
+  COUNT(event),                                                    -- Count of number of occurrences of a particular product event 
+  DATE(received_at)                                                -- Date of click 
+FROM world.tracks                                                  -- Use tracks table to analyze 
+GROUP BY SUBSTRING(event,1,locate('_',event)), DATE(recieved_at)   -- Grouping by the product abbreviation, followed by the date the event took place
+ORDER BY date(received_at) ASC                                     -- Order data in ascending order
+  
+  
