@@ -1,0 +1,5 @@
+SELECT DISTINCT users.email as 'List of e-Mails to Notify'
+FROM USERS
+JOIN cluser_agents ON users.default_account_id = cluster_agents.account_id
+WHERE agent_version LIKE ('3.12.%')
+AND agent_lang ='ruby'
