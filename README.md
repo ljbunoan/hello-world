@@ -7,6 +7,7 @@
  
  MYSQL and Microsoft Excel
  
+ Downloaded MYSQL Community Suite for MAC. All datasets and tables were placed under the default "World" Schema upon installation.
  
 # Challenges and Workarounds 
 
