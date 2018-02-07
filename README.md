@@ -26,11 +26,11 @@ Saturday	587
 Oddly enough, there is no increase/growth in activity over time. Clicks by product tend to be within a certain rage over the course of nearly 8 months. The next question would be to see how we can increase user behaviors and assess its value to them.
 
 # Results (by product) 
-- SYN: During the week, clicks ranged between 20-40 per day. No signs of progressive growth over the 8 months. Most popular product that was utilized/clicked on across accounts.
-- INS: generally 10-20 clicks per day durng the week. This stayed constant over the 8 months. Significant spikes took place on 4/19/17, 4/20/17, and 5/4/17. Why did these take place? Was this tied to the (or any) security breach? Was this a key promotional period for certain accounts?
-- ALRT: Clicks per weekday ranged anywhere from 5-20. There is very minimal increse in the number of clicks as time progresses, but also there are bigger swings in number of clicks by day as we approach June.
-- MTBLS: not as popular of a product, as number of clicks during weekdays range anywhere from 1-6. No signs of growth over time.
-- BYOND: Least popular product out of the 5. Will register a click or two scattered over a few days. 
+- SYN (New Relic Question 4 SYN.jpg): During the week, clicks ranged between 20-40 per day. No signs of progressive growth over the 8 months. Most popular product that was utilized/clicked on across accounts.
+- INS (New Relic Question 4 INS.jpg): generally 10-20 clicks per day durng the week. This stayed constant over the 8 months. Significant spikes took place on 4/19/17, 4/20/17, and 5/4/17. Why did these take place? Was this tied to the (or any) security breach? Was this a key promotional period for certain accounts?
+- ALRT (New Relic Question 4 ALRT.jpg): Clicks per weekday ranged anywhere from 5-20. There is very minimal increse in the number of clicks as time progresses, but also there are bigger swings in number of clicks by day as we approach June.
+- MTBLS (New Relic Question 4 MTBLS.jpg): not as popular of a product, as number of clicks during weekdays range anywhere from 1-6. No signs of growth over time.
+- BYOND (New Relic Question 4 BYOND.jpg): Least popular product out of the 5. Will register a click or two scattered over a few days. 
 
 
 
