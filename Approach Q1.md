@@ -16,7 +16,6 @@ records not be included.
 # Results
 Overall total for Ruby customers is: $2,476.
 For accounts to-date: total is $1,791 (from account 1549877). 
-For accounts with start and end plan dates: total is $685 ($447 from 917573
-1574191	$238 from 1574191.
+For accounts with start and end plan dates: total is $685 ($447 from 917573,	$238 from 1574191).
 
 
