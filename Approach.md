@@ -1,4 +1,4 @@
-# Approach with queries 
+# Approach with queries (New Relic Question 1 query SQL code)
 
 Revenue is calculated using MRR. Since it is broken out daily, 
 we need to calculate the number of months the subcriptions has been active, and multiply it by the MRR for each account. 
