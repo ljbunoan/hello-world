@@ -1,0 +1,35 @@
+-- Section 1: plans ongoing through 2016.
+
+SELECT 
+cluster_agents.agent_lang, 
+(TIMESTAMPDIFF (MONTH, customer_history.plan_start, '2016-12-31') * (customer_history.apm_mrr)) As 'Revenue To-Date'
+
+FROM customer_history 
+ 
+ JOIN cluster_agents ON customer_history.account_id = cluster_agents.account_id 
+ 
+WHERE  customer_history.plan_end like('1900%') 
+ AND customer_history.plan_start not like ('1900%')
+ AND (TIMESTAMPDIFF (MONTH, customer_history.plan_start, '2016-12-31') * (customer_history.apm_mrr)) >0
+ GROUP BY customer_history.account_id
+ ORDER BY (TIMESTAMPDIFF (MONTH, customer_history.plan_start, '2016-12-31') * (customer_history.apm_mrr)) DESC;
+ 
+ 
+ -- Second Section Covering plans that have an end date in 2016
+ 
+ SELECT 
+cluster_agents.agent_lang, 
+(TIMESTAMPDIFF (MONTH, Greatest(customer_history.plan_start,'2016-01-01'), customer_history.plan_end) * (customer_history.apm_mrr))  AS 'Revenue Unil Plan End'
+FROM customer_history 
+  JOIN cluster_agents ON customer_history.account_id = cluster_agents.account_id 
+ WHERE   customer_history.plan_end not like('1900%') 
+ AND customer_history.plan_start not like ('1900%')
+ and customer_history.plan_end between '2016-01-01' and '2016-12-31'
+ 
+ AND (TIMESTAMPDIFF (MONTH, customer_history.plan_start, customer_history.plan_end) * (customer_history.apm_mrr)) >0
+ GROUP BY cluster_agents.agent_lang
+ ORDER BY (TIMESTAMPDIFF (MONTH, Greatest(customer_history.plan_start,'2016-01-01'), customer_history.plan_end) * (customer_history.apm_mrr)) DESC
+ 
+
+ 
+
