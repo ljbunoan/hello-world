@@ -1,0 +1,26 @@
+SELECT 
+customer_history.account_id, 
+(TIMESTAMPDIFF (MONTH, customer_history.plan_start, '2017-06-01') * (customer_history.total_mrr)) As 'Revenue To-Date'
+
+FROM customer_history 
+ 
+ JOIN accounts  ON customer_history.account_id = accounts.id
+ WHERE accounts.application_type LIKE ('%ruby%')
+AND  customer_history.plan_end like('1900%') 
+ AND customer_history.plan_start not like ('1900%')
+ AND (TIMESTAMPDIFF (MONTH, customer_history.plan_start, '2017-06-01') * (customer_history.total_mrr)) >0
+ GROUP BY customer_history.account_id;
+ 
+ SELECT 
+customer_history.account_id, 
+(TIMESTAMPDIFF (MONTH, customer_history.plan_start, customer_history.plan_end) * (customer_history.total_mrr))  AS 'Revenue Unil Plan End'
+FROM customer_history 
+ JOIN accounts  ON customer_history.account_id = accounts.id
+ WHERE accounts.application_type LIKE ('%ruby%')
+AND  customer_history.plan_end not like('1900%') 
+ AND customer_history.plan_start not like ('1900%')
+ AND (TIMESTAMPDIFF (MONTH, customer_history.plan_start, '2017-06-01') * (customer_history.total_mrr)) >0
+ GROUP BY customer_history.account_id
+
+ 
+
